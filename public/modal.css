@@ -1,0 +1,57 @@
+.container .containerGrid .image {
+    cursor: pointer;
+}
+
+.container .containerGrid .image img {
+    cursor: pointer;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .containerGrid .image:hover img {
+transform: scale(1.04);
+transition-duration: 0.1s;
+}
+
+
+
+
+.container .popup-image{
+    position:flex;
+    margin: auto;
+    align-items: center;
+    height:auto;
+    width: 100%;
+    max-width: 900px;
+    z-index: 1000;
+    display: none;
+    padding-top: 25px;
+}
+
+.container .popup-image span{
+position: absolute;
+top: 30px;
+right:60px;
+text-align: center;
+justify-content: center;
+font-size: 50px;
+font-weight: bolder;
+color: rgb(254, 254, 254);
+cursor: pointer;
+z-index: 100;
+transition: 0.2s;
+}
+
+.container .popup-image span:hover{
+    color: rgb(214, 58, 97);
+    transition: 0.2s;
+}
+
+.container .popup-image img {
+    display: fixed;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+
