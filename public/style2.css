@@ -1,6 +1,8 @@
 *{
     scroll-behavior: smooth;
     font-family:"Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -10,8 +12,9 @@ body{
     align-items: center;
     text-align: center;
     width: 100%;
-    background-image: url(/images/white-marble-with-gray-texture-background.jpg);
+    background-image: url(/white-marble-with-gray-texture-background.jpg);
 }
+
 
 
 section {
