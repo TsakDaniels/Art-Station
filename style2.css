@@ -3,6 +3,9 @@
     font-family:"Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -12,9 +15,11 @@ body{
     align-items: center;
     text-align: center;
     width: 100%;
-    background-image: url(/white-marble-with-gray-texture-background.jpg);
+    overflow-x: hidden;
+    background-image: url("/white-marble-with-gray-texture-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
 
 
 section {
@@ -71,7 +76,7 @@ img {
     margin:auto;
     text-align: center;
     display: block;
-    width: 130px;
+    width: 200px;
     justify-content:center;
     align-items: center;
     z-index: 10;
@@ -141,3 +146,5 @@ i {
 color: rgb(214, 58, 97);
 transition: 0.5s;
 }
+
+

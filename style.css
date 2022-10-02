@@ -11,7 +11,7 @@
 }
 
 body {
-    min-height: 100vh;
+    
     background: #202022;
     overflow-x: hidden;
 }
@@ -45,11 +45,14 @@ header ul {
     display: flex;
     justify-content: center;
     align-items: right;
+    width: 100%;
 }
 
 header ul li {
-    list-style: none;
-    margin-left: 40px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 header ul li a {
@@ -147,7 +150,7 @@ section img #redline {
 
 ul.icons {
     font-size: 30px;
-    position: relative;
+    position: absolute;
     text-align: center;
     width: 100%;
 }
@@ -161,5 +164,12 @@ ul.icons {
         color: rgb(214, 58, 97);
         transition: 0.5s;
     }
+
+
+    @media (max-width: 800px) {
+        .sec {
+            display: none;
+        }
+      }
 
 
