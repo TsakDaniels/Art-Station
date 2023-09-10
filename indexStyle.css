@@ -1,0 +1,179 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+
+body {
+    background: #202022;
+    overflow-x: hidden;
+}
+
+
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color:#fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    width: 100%;
+}
+
+header ul li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+header ul li a:hover, .active {
+    color:rgb(214, 58, 97);
+    background: #fff;
+    transition: 0.5s;
+}
+
+#redline {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img #bg {
+mix-blend-mode: screen;
+}
+
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: none;
+    font-size: 4.5vw;
+    z-index: 9;
+}
+
+section img #redline {
+    z-index: 10;
+}
+
+
+.sec {
+    position: relative;
+    padding:  100px 3em;
+    color: #fff;
+}
+
+.sec h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#btn {
+    z-index: 9;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background:#fff;
+    color: rgb(214, 58, 97);
+    font-size: 1.5em;
+    display: inline-block;
+    transform: translateY(-100px);
+    transition: 0.2s;
+}
+
+#btn:hover {
+    background:rgb(214, 58, 97);
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*FOOTER */
+        #footer i:hover {
+            color: rgb(255, 255, 255) !important;
+            transition: 0.5s;
+        }
+
+
+ul.icons {
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+    ul.icons li {
+        display: inline;
+        padding: 20px;
+    }
+
+    i {
+        color: rgb(214, 58, 97);
+        transition: 0.5s;
+    }
+
+
+    @media (max-width: 800px) {
+        .sec {
+            display: none;
+        }
+
+        #samples {
+            display: none;
+        }
+      }
+
+

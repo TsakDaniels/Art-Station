@@ -1,0 +1,209 @@
+*{
+    scroll-behavior: smooth;
+    font-family:"Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+#paintings-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Three columns in each row */
+  gap: 20px; /* Adjust the gap between paintings */
+}
+
+@media (max-width: 750px){
+  #paintings-grid {
+      display: grid;
+  grid-template-columns:100%;
+  gap: 12px; /* Adjust the gap between paintings */
+  }
+}
+
+@media (min-width: 751px)and (max-width:1599px){
+  #paintings-grid {
+      display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap: 12px; /* Adjust the gap between paintings */
+  }
+}
+
+@media (min-width: 1200px) and (max-width:1600px){
+  #paintings-grid {
+      display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  
+  gap: 12px; /* Adjust the gap between paintings */
+  }
+}
+
+
+.painting {
+  text-align: center; 
+  
+}
+
+.custom-font {
+  border-radius: 2%;
+  background-color: rgb(22, 22, 22);
+  font-family:"Poppins", sans-serif;
+  font-weight: 200;
+  color:rgb(255, 253, 253);
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.painting img {
+  max-width: 100%;
+  max-height:400px;
+}
+
+
+
+body{
+  background-image: url('/blackmarble.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This keeps the background fixed while scrolling */
+    display: block;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+
+
+img {
+  border-radius: 4%;
+  object-fit: cover; /* Optional: Maintain aspect ratio and crop if necessary */
+   
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+  
+  @media (max-width: 1200px) {
+    .containerGrid {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+  }
+  @media (max-width: 800px) {
+    .containerGrid {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  }
+  @media (max-width: 400px) {
+    .containerGrid {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  }
+
+
+
+  /*FOOTER */
+  #footer i:hover {
+    color: rgb(255, 255, 255) !important;
+    transition: 0.5s;
+}
+
+
+ul.icons {
+font-size: 30px;
+position: relative;
+text-align: center;
+width: 100%;
+}
+
+ul.icons li {
+display: inline;
+padding: 20px;
+}
+
+i {
+color: rgb(214, 58, 97);
+transition: 0.5s;
+}
+
+
+
+.galleryContainer {
+  z-index: -9999;
+  background-color: #00000049;
+  width: 90%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding:3% 3% 3% 3%;
+  border-radius: 0.8%;
+}
+
+
+
+#btn2 {
+  margin:auto;
+  text-align: center;
+  display: block;
+  width: 120px;
+  justify-content:center;
+  align-items: center;
+  z-index: 10;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background:#fff;
+  color: rgb(214, 58, 97);
+  font-size: 1.5em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  transition: 0.2s;
+}
+
+#btn2:hover {
+  background:rgb(214, 58, 97);
+  color: #fff;
+  transition: 0.5s;
+}
+
+
+#btn3 {
+  margin:auto;
+  text-align: center;
+  display: block;
+  width: 200px;
+  justify-content:center;
+  align-items: center;
+  z-index: 10;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background:#fff;
+  color: rgb(214, 58, 97);
+  font-size: 1.5em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  transition: 0.2s;
+}
+
+#btn3:hover {
+  background:rgb(214, 58, 97);
+  color: #fff;
+  transition: 0.5s;
+}
