@@ -1,57 +1,148 @@
-.container .containerGrid .image {
-    cursor: pointer;
+#paintings-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns in each row */
+    gap: 20px; /* Adjust the gap between paintings */
 }
 
-.container .containerGrid .image img {
-    cursor: pointer;
-    object-fit: cover;
-    transition: .2s linear;
+@media (max-width: 750px){
+    #paintings-grid {
+        display: grid;
+    grid-template-columns:100%;
+    gap: 12px; /* Adjust the gap between paintings */
+    }
 }
 
-.container .containerGrid .image:hover img {
-transform: scale(1.04);
-transition-duration: 0.1s;
+@media (min-width: 751px)and (max-width:1599px){
+    #paintings-grid {
+        display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 12px; /* Adjust the gap between paintings */
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1600px){
+    #paintings-grid {
+        display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 12px; /* Adjust the gap between paintings */
+    }
 }
 
 
+.painting {
+    text-align: center; 
+}
 
+.custom-font {
+    font-family:'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    color:rgba(0, 0, 0, 0.77);
+}
 
-.container .popup-image{
-    position:flex;
+.painting img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-content-container {
     margin: auto;
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    height:auto;
+    max-width: 40%;
+    padding-top:5% ;
+}
+
+
+.lightbox {
     width: 100%;
-    max-width: 900px;
-    z-index: 1000;
     display: none;
-    padding-top: 25px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.89);
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-.container .popup-image span{
-position: absolute;
-top: 30px;
-right:60px;
-text-align: center;
-justify-content: center;
-font-size: 50px;
-font-weight: bolder;
-color: rgb(254, 254, 254);
-cursor: pointer;
-z-index: 100;
-transition: 0.2s;
+.lightbox img {
+    max-width: auto; /* Adjust the maximum width */
+    max-height: 80vh; /* Adjust the maximum height */
+    margin:auto; /* Center the image vertically and horizontally */
+    display: block;
 }
 
-.container .popup-image span:hover{
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.galleryContainer {
+    width: 90%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#btn2 {
+    padding-top: 10%;
+    margin:0;
+    text-align: center;
+    display: block;
+    width: 120px;
+    z-index: 10;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background:#fff;
     color: rgb(214, 58, 97);
+    font-size: 1.5em;
+    margin-top: 2%;
+    margin-bottom: 2%;
     transition: 0.2s;
 }
 
-.container .popup-image img {
-    display: fixed;
-    margin: auto;
-    align-items: center;
-    text-align: center;
-    width: auto;
+#btn2:hover {
+    background:rgb(214, 58, 97);
+    color: #fff;
+    transition: 0.5s;
 }
 
+
+#btn3 {
+    margin:auto;
+    text-align: center;
+    display: block;
+    width: 200px;
+    justify-content:center;
+    align-items: center;
+    z-index: 10;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background:#fff;
+    color: rgb(214, 58, 97);
+    font-size: 1.5em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transition: 0.2s;
+}
+
+#btn3:hover {
+    background:rgb(214, 58, 97);
+    color: #fff;
+    transition: 0.5s;
+}
